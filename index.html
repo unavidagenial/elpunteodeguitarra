@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Punteo de Guitarra | Prensa Digital & Podcast</title>
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #212529;
+      --primary: #c0392b;
+      --border: #e9ecef;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid var(--primary);
+    }
+    header h1 { margin: 0; font-size: 2.2rem; text-transform: uppercase; letter-spacing: 1px; }
+    header p { margin: 0.5rem 0 0; color: #bbb; font-size: 1rem; }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .featured-podcast {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 2rem;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%; border: 0;
+    }
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    article {
+      background: var(--card-bg);
+      padding: 1.25rem;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    article h3 { margin-top: 0; }
+    .date { font-size: 0.85rem; color: #6c757d; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>El Punteo de Guitarra</h1>
+    <p>Medio de prensa digital & podcast oficial</p>
+  </header>
+
+  <main class="container">
+    <section class="featured-podcast">
+      <h2>Último episodio del podcast</h2>
+      <p>Sintoniza nuestra última entrega audiovisual transmitida en YouTube:</p>
+      <div class="video-wrapper">
+        <!-- Reemplaza el ID del video (dQw4w9WgXcQ) por el enlace o ID real de tu video/lista de YouTube -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <h2>Notas de prensa y actualidad</h2>
+    <section class="news-grid">
+      <article>
+        <span class="date">Octubre 2026</span>
+        <h3>Lanzamiento oficial de El Punteo de Guitarra</h3>
+        <p>Inauguramos nuestro espacio informativo digital enfocado en la difusión cultural, novedades del instrumento y entrevistas exclusivas.</p>
+      </article>
+      <article>
+        <span class="date">Octubre 2026</span>
+        <h3>Especial: Guitarras y producción sonora</h3>
+        <p>Un recorrido por las técnicas contemporáneas y los artistas que marcan tendencia en la escena musical actual.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
